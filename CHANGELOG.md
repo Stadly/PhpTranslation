@@ -7,7 +7,7 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 ## Unreleased
 
 ### Added
-- Nothing
+- Loader for MO files.
 
 ### Changed
 - Nothing

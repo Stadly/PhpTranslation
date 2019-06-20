@@ -1,0 +1,58 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "foo"
+msgstr "bar"
+
+msgid "one foo"
+msgid_plural "%count% foos"
+msgstr[0] "one bar"
+msgstr[1] "%count% bars"
+
+msgid "{0} no foos|one foo|%count% foos"
+msgstr "{0} no bars|one bar|%count% bars"
+
+msgid "missing foo plural"
+msgid_plural "missing foo plurals"
+msgstr[0] "missing bar plural"
+msgstr[1] ""
+
+msgid "missing foo singular"
+msgid_plural "missing foo singulars"
+msgstr[0] ""
+msgstr[1] "missing bar singulars"
+
+msgid "message without translation"
+msgstr ""
+
+msgid "one message without translation"
+msgid_plural "%count% messages without translations"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "{0} no messages without translations|one message without translation|%count% messages without translations"
+msgstr ""
+
+msgid "string containing || foo"
+msgstr "string containing || bar"
+
+msgid "one string containing || foo"
+msgid_plural "%count% strings containing || foos"
+msgstr[0] "one string containing || bar"
+msgstr[1] "%count% strings containing || bars"
+
+msgid "{0} no strings containing || foos|one string containing || foo|%count% strings containing || foos"
+msgstr "{0} no strings containing || bars|one string containing || bar|%count% strings containing || bars"
+
+msgid "escaped \"foo\""
+msgstr "escaped \"bar\""
+
+msgid "one escaped \"foo\""
+msgid_plural "%count% escaped \"foos\""
+msgstr[0] "one escaped \"bar\""
+msgstr[1] "%count% escaped \"bars\""
+
+msgid "{0} no escaped \"foos\"|one one escaped \"foo\"|%count% escaped \"foos\""
+msgstr "{0} no escaped \"bars\"|one one escaped \"bar\"|%count% escaped \"bars\""
