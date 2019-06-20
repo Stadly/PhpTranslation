@@ -1,0 +1,67 @@
+{
+    "name": "stadly/php-translation",
+    "type": "library",
+    "description": "Augmenting the Symfony Translation library.",
+    "keywords": [
+        "translation",
+        "Symfony"
+    ],
+    "homepage": "https://github.com/Stadly/PhpTranslation",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Magnar Ovedal Myrtveit",
+            "email": "magnar@myrtveit.com",
+            "homepage": "https://github.com/Stadly",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "symfony/translation": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Stadly\\Translation\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Stadly\\Translation\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": [
+            "composer lint",
+            "composer check-style",
+            "composer phpstan",
+            "composer phpunit"
+        ],
+        "lint": "parallel-lint . --exclude vendor",
+        "phpstan": [
+            "phpstan analyse",
+            "phpstan analyse -c phpstan.tests.neon.dist --memory-limit 256M"
+        ],
+        "phpunit": "phpunit",
+        "check-style": "phpcs src tests --standard=vendor/stadly/php-style/StadlyCodingStandard -p",
+        "fix-style": "phpcbf src tests --standard=vendor/stadly/php-style/StadlyCodingStandard -p"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "require-dev": {
+        "jakub-onderka/php-parallel-lint": "^1.0",
+        "pepakriz/phpstan-exception-rules": "^0.8.0",
+        "phpstan/phpstan": "^0.11.0",
+        "phpstan/phpstan-deprecation-rules": "^0.11.0",
+        "phpstan/phpstan-phpunit": "^0.11.0",
+        "phpstan/phpstan-strict-rules": "^0.11.0",
+        "phpunit/phpunit": "^7.1",
+        "stadly/php-style": "^1.0"
+    }
+}
